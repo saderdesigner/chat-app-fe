@@ -1,0 +1,32 @@
+@import "../../components//assets/colors";
+
+.room {
+  height: 100%;
+
+  .room-container {
+    display: grid;
+    grid-template-columns: 20% auto;
+    height: 100%;
+
+    .side-bar {
+      // height: 100%;
+      background-color: $primary-color;
+      overflow-y: scroll;
+    }
+
+    .right-col {
+      display: grid;
+      grid-template-rows: auto 12%;
+    }
+
+    .chat-body-container {
+      background-color: azure;
+    }
+    .chat-input-container {
+      background-color: beige;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}

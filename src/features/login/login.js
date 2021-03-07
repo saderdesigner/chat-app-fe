@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { login } from "./loginSlice";
 import { Redirect } from "react-router-dom";
 
+import "./login.scss";
+
 Login.propTypes = {};
 
 function Login(props) {
@@ -18,7 +20,7 @@ function Login(props) {
   };
 
   return (
-    <div>
+    <div className="login-form-container">
       {currentUser ? <Redirect to="/room" /> : null}
 
       <LoginForm setLogin={loginHandler} />

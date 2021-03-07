@@ -1,3 +1,4 @@
+import { FormControl, FormHelperText } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Checkbox from "@material-ui/core/Checkbox";
 import Container from "@material-ui/core/Container";
@@ -9,6 +10,7 @@ import TextField from "@material-ui/core/TextField";
 import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 import "./loginForm.scss";
 
@@ -26,6 +28,7 @@ function LoginForm(props) {
   const { setLogin } = props;
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const userError = useSelector((state) => state.currentUser.error);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -46,15 +49,15 @@ function LoginForm(props) {
     if (!setLogin) return;
 
     setLogin({
-      id: "na14xjha1anx",
       username: username,
+      password: password,
     });
 
     setUsername("");
     setPassword("");
   };
   return (
-    <Container component="main" maxWidth="xs">
+    <Container component="main" maxWidth="xs" className="login-form-container">
       <CssBaseline />
       <div className="paper">
         <Typography component="h1" variant="h5">
@@ -87,6 +90,10 @@ function LoginForm(props) {
             onChange={handleChange}
             value={password}
           />
+          <FormControl error={userError ? true : false} className="form-error">
+            <FormHelperText>{userError ? userError : null}</FormHelperText>
+          </FormControl>
+
           <FormControlLabel
             control={<Checkbox value="remember" color="primary" />}
             label="Remember me"

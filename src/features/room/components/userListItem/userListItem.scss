@@ -1,0 +1,45 @@
+@import "../../../../components/assets//colors";
+
+$itemHeight: 30px;
+
+.user-list-item {
+  display: grid;
+  grid-template-columns: 40px 1fr -webkit-max-content;
+  grid-template-columns: 40px 1fr max-content;
+  grid-gap: 10px;
+  color: $contrasted-primary-text; // $contrasting-primary-text-color;
+  //   font-size: 1.3rem;
+  border-bottom: 1px solid $primary-dark;
+  padding: 10px;
+  align-items: center;
+
+  &.me,
+  &:hover {
+    background: $primary-dark;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  > .avatar-container {
+    grid-row: span 1;
+    height: $itemHeight;
+    width: $itemHeight;
+    border-radius: 100%;
+
+    > img {
+      grid-row: span 2;
+      height: $itemHeight;
+      width: $itemHeight;
+      border-radius: 100%;
+    }
+  }
+
+  .title-text {
+    font-weight: bold;
+    // white-space: nowrap;
+    // overflow-x: hidden;
+    // text-overflow: ellipsis;
+  }
+}
