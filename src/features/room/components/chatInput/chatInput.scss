@@ -1,3 +1,5 @@
+@import "../../../../components/assets/_colors";
+
 .chat-input-form {
   width: 100%;
   display: grid;
@@ -6,13 +8,11 @@
   justify-content: center;
   align-items: center;
 
+  background-color: $accent-color;
+
   .input-container fieldset {
     width: 100%;
     height: 80%;
-
-    .chat-input fieldset {
-      border-radius: 10px 0 0 10px !important;
-    }
   }
   .button-container {
     height: 55%;

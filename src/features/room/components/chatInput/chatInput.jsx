@@ -10,6 +10,7 @@ const CustomTextField = withStyles({
     "& .MuiOutlinedInput-root": {
       "& fieldset": {
         borderRadius: `10px 0 0 10px`,
+        backgroundColor: "white",
       },
     },
   },

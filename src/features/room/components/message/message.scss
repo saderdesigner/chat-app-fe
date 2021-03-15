@@ -51,6 +51,10 @@ $speech-bubble-border-color: darken($accent-color, 13.18);
         flex-direction: column;
         padding-bottom: 12px;
       }
+
+      .message-time {
+        color: $contrasted-primary-text;
+      }
     }
   }
 

@@ -59,6 +59,66 @@ export const USER_DATA = [
     display_name: "Sader",
     password: "123456",
   },
+  {
+    id: "b8ff40ad-302f-46ec-8bd1-db2cd976fe90",
+    username: "histed0@geocities.jp",
+    display_name: "Haywood Isted",
+    password: "spvdAs7s",
+  },
+  {
+    id: "02c1e63a-52a4-4587-a27e-d7672016369b",
+    username: "cbeadman1@unblog.fr",
+    display_name: "Clifford Beadman",
+    password: "lu63KRqv3L9r",
+  },
+  {
+    id: "968a7103-119a-40f8-bbf3-dde3bffeed77",
+    username: "gmaclure2@edublogs.org",
+    display_name: "Garrick MacLure",
+    password: "jGyU7YAWgq",
+  },
+  {
+    id: "788ab231-88a5-4e2d-b60b-d561bfd4e878",
+    username: "jpaskin3@scribd.com",
+    display_name: "Judye Paskin",
+    password: "m69piXtrLKXd",
+  },
+  {
+    id: "76bdd2ae-738f-421e-beb9-3e58c4652bee",
+    username: "tcurreen4@theatlantic.com",
+    display_name: "Tatum Curreen",
+    password: "5VeuJJOK",
+  },
+  {
+    id: "367dda73-3934-4340-9341-a705fa5829e6",
+    username: "glonding5@amazon.co.jp",
+    display_name: "Gard Londing",
+    password: "K90B0Rut",
+  },
+  {
+    id: "e4a7d17a-d029-4ab0-841e-1cd58fb9c3e1",
+    username: "phemstead6@washingtonpost.com",
+    display_name: "Pen Hemstead",
+    password: "WE9fjO8",
+  },
+  {
+    id: "5e6757d6-58cb-4b33-bfe8-81ec16b12f1c",
+    username: "ffergyson7@nhs.uk",
+    display_name: "Frances Fergyson",
+    password: "C8Mw0gH",
+  },
+  {
+    id: "dcf119b5-bc5b-4971-b3d7-f4f3ce9bfdbe",
+    username: "svahey8@ihg.com",
+    display_name: "Sissy Vahey",
+    password: "yoYsiy",
+  },
+  {
+    id: "8c8c32ef-1ee3-4900-84ce-baf7eb07478c",
+    username: "seggins9@flavors.me",
+    display_name: "Susann Eggins",
+    password: "MLt0dCZa7",
+  },
 ];
 
 export const userAuth = (authUser) => {
